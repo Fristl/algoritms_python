@@ -11,8 +11,8 @@ array = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
 print(array)
 
 
-min_el_1 = MAX_ITEM
-min_el_2 = MAX_ITEM
+min_el_1 = float('inf')    # MAX_ITEM
+min_el_2 = float('inf')    # MAX_ITEM
 
 for item in array:
     if item < min_el_1:
