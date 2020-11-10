@@ -13,7 +13,7 @@ matrix = [[random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE_A)]
 print(*matrix, '\nНаименьшие элементы в столбцах:', sep='\n')
 
 
-max_of_the_small = MIN_ITEM
+max_of_the_small = -float('inf')      # MIN_ITEM
 
 for spam in range(SIZE_A):
     minimal_in_column = matrix[0][spam]
