@@ -13,7 +13,7 @@ array = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
 print(array)
 
 
-max_negative_el = MIN_ITEM
+max_negative_el = -float('inf')    # MIN_ITEM
 index = 0
 
 for item in array:
