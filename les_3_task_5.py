@@ -14,9 +14,12 @@ print(array)
 
 
 max_negative_el = MIN_ITEM
+index = 0
 
 for item in array:
     if max_negative_el < item < 0:
         max_negative_el = item
+        index = idx
 
-print(max_negative_el if max_negative_el < 0 else 'В массиве нет отрицательных чисел!')
+print(max_negative_el, ': c индексом ', index
+if max_negative_el < 0 else 'В массиве нет отрицательных чисел!')
