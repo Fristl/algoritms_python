@@ -39,7 +39,7 @@ def sieve_f2(m):
     n = m * 10
     sieve = [2]
 
-    for i in range(3, n):
+    for i in range(2, n):
         for item in sieve:
             if i % item == 0:
                 break
@@ -48,7 +48,7 @@ def sieve_f2(m):
             else:
                 sieve.append(i)
 
-    return sieve[m]
+    return sieve[m - 1]
 
 ##############################################
 
